@@ -76,6 +76,7 @@ if player['age']['answer'] > 18:
                     start_game = True
                 elif start_game.lower() == 'нет':
                     start_game = False
+                    break
                 else:
                     print('Вы должны ответить да или нет')
                     continue

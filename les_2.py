@@ -135,7 +135,6 @@ if not break_game and player['age']['answer'] > 18:
                 game_where_number['for_numbers'].pop()
             else:
                 print('нет не верно, попробуй еще.')
-                continue
             game_where_number['game_step'] += 1
         else:
             if not break_game:
