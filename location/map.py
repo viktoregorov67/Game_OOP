@@ -81,7 +81,6 @@ class Map:
         return random.choice([True, False, True])
 
 
-
 if __name__ == '__main__':
     loc_map = Map(10, 10)
     print(1)
