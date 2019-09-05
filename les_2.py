@@ -30,6 +30,7 @@ for itm in player:
         temp = input(player[itm]['question'] + '\n')
         if temp.lower() == 'exit':
             break_game = True
+            continue
         # преобразуем возраст в int
         if itm == 'age':
             if temp.isdigit():
