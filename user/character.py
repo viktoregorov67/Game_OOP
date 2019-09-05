@@ -1,3 +1,6 @@
+from user.bag import Bag
+
+
 class Character:
     __ch_type = ('воин', 'маг')
 
@@ -12,6 +15,7 @@ class Character:
                     self.__create_warrior()
                 break
             print('Неверный ввод, повторите')
+        self.bag = Bag(self)
 
     def __create_warrior(self):
         self.power = 60

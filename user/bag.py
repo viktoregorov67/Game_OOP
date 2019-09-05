@@ -1,6 +1,3 @@
-from functools import reduce
-
-
 class WeightError(Exception):
     def __init__(self):
         Exception.__init__(self)

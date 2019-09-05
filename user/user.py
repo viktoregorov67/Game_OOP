@@ -1,3 +1,6 @@
+from user.character import Character
+
+
 class User:
     achievements = property()
     __achievements = []
@@ -5,6 +8,12 @@ class User:
     def __init__(self, name, age: int):
         self.name = name
         self.age = age
+        self.save = self.check_save()
+        self.character = Character(self)
+
+    def check_save(self):
+        # todo проверить сейвы
+        return 0
 
     @achievements.getter
     def achievements(self):
